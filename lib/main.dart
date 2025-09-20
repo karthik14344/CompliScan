@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sih/services/mongo_service.dart';
-import 'firebase_options.dart';
 import 'pages/landing_page.dart';
 import 'pages/dashboard_page.dart';
 import 'theme/app_theme.dart';
