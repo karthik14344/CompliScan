@@ -13,7 +13,7 @@ class StatsOverview extends StatelessWidget {
     final nonCompliantCount = products.length - compliantCount;
     final avgScore = products.isEmpty
         ? 0
-        : products.map((p) => p.complianceScore).reduce((a, b) => a + b) /
+        : products.map((p) => p.complianceScore ?? 0).reduce((a, b) => a + b) /
             products.length;
 
     return Row(

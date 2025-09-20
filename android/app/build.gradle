@@ -29,6 +29,14 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+    dependencies {
+        // Add the BOM to manage dependency versions
+        implementation platform('org.mongodb:mongodb-driver-bom:5.1.4')
+        
+        // Add the Kotlin Coroutine driver and serialization dependency
+        implementation 'org.mongodb:mongodb-driver-kotlin-coroutine'
+        implementation 'org.mongodb:bson-kotlinx'
+    }
 
     buildTypes {
         release {
